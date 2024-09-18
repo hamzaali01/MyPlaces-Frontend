@@ -1,15 +1,44 @@
 .authentication__header {
-  color: white;
+  color: #333333; /* Dark gray for a softer look compared to white */
   text-align: center;
+  font-size: 1.8rem; /* Larger font size for emphasis */
+  margin-bottom: 1rem; /* Space below header */
 }
 
 .authentication {
   width: 90%;
   max-width: 25rem;
-  margin: 7rem auto;
+  margin: 5rem auto; /* Adjusted margin for better vertical alignment */
   text-align: center;
 }
 
 .authentication form {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem; /* Increased spacing below the form */
+}
+
+.authentication input,
+.authentication button {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #cccccc; /* Light gray border for inputs and buttons */
+  border-radius: 6px; /* Rounded corners for inputs and buttons */
+  font-size: 1rem;
+}
+
+.authentication input:focus,
+.authentication button:focus {
+  outline: none; /* Remove default focus outline */
+  border-color: #333333; /* Darker border on focus for better visibility */
+}
+
+.authentication button {
+  background: #1c1c1c; /* Dark button background */
+  color: white; /* White text on button */
+  cursor: pointer; /* Pointer cursor for buttons */
+  transition: background 0.3s ease; /* Smooth background color transition */
+}
+
+.authentication button:hover,
+.authentication button:active {
+  background: #333333; /* Darker shade on hover */
 }

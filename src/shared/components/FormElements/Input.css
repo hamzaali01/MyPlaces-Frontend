@@ -6,36 +6,39 @@
 .form-control input,
 .form-control textarea {
   display: block;
+  width: 100%;
 }
 
 .form-control label {
-  font-weight: bold;
+  font-weight: 600; /* Slightly bolder for better readability */
   margin-bottom: 0.5rem;
+  color: #333; /* Dark gray for label text */
 }
 
 .form-control input,
 .form-control textarea {
-  width: 100%;
   font: inherit;
-  border: 1px solid #ccc;
-  background: #f8f8f8;
-  padding: 0.15rem 0.25rem;
+  border: 1px solid #ddd; /* Lighter border for a softer look */
+  background: #f0f0f0; /* Lighter background for input fields */
+  padding: 0.75rem; /* Increased padding for comfort */
+  border-radius: 4px; /* Rounded corners for a modern look */
+  transition: border-color 0.3s ease, background 0.3s ease; /* Smooth transitions */
 }
 
 .form-control input:focus,
 .form-control textarea:focus {
   outline: none;
-  background: #ebebeb;
-  border-color: #510077;
+  background: #e0e0e0; /* Slightly darker background on focus */
+  border-color: #333; /* Darker border on focus */
 }
 
 .form-control--invalid label,
 .form-control--invalid p {
-  color: red;
+  color: #e74c3c; /* Soft red for error messages */
 }
 
 .form-control--invalid input,
 .form-control--invalid textarea {
-  border-color: red;
-  background: #ffd1d1;
+  border-color: #e74c3c; /* Red border for invalid input */
+  background: #fbe8e8; /* Light red background for invalid input */
 }

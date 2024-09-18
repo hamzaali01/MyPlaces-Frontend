@@ -1,14 +1,15 @@
 .button {
   font: inherit;
-  padding: 0.5rem 1.5rem;
-  border: 1px solid #ff0055;
-  border-radius: 4px;
-  background: #ff0055;
+  padding: 0.75rem 1.5rem; /* Slightly larger padding for comfort */
+  border: 1px solid #333; /* Darker border for better contrast */
+  border-radius: 4px; /* Rounded corners for a modern look */
+  background: #333; /* Dark background */
   color: white;
   cursor: pointer;
   margin-right: 1rem;
   text-decoration: none;
   display: inline-block;
+  transition: background 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
 }
 
 .button:focus {
@@ -17,38 +18,39 @@
 
 .button:hover,
 .button:active {
-  background: #ff4382;
-  border-color: #ff4382;
+  background: #555; /* Slightly lighter background on hover */
+  border-color: #555; /* Matching border color on hover */
 }
 
 .button--inverse {
   background: transparent;
-  color: #ff0055;
+  color: #333; /* Dark text color */
+  border: 1px solid #333; /* Dark border */
 }
 
 .button--inverse:hover,
 .button--inverse:active {
   color: white;
-  background: #ff0055;
+  background: #333; /* Dark background on hover */
 }
 
 .button--danger {
-  background: #830000;
-  border-color: #830000;
+  background: #e74c3c; /* Soft red background for danger */
+  border-color: #e74c3c; /* Matching border color */
 }
 
 .button--danger:hover,
 .button--danger:active {
-  background: #f34343;
-  border-color: #f34343;
+  background: #c0392b; /* Darker red on hover */
+  border-color: #c0392b; /* Matching border color on hover */
 }
 
 .button:disabled,
 .button:hover:disabled,
 .button:active:disabled {
-  background: #ccc;
-  color: #979797;
-  border-color: #ccc;
+  background: #e0e0e0; /* Light gray background for disabled state */
+  color: #a0a0a0; /* Gray text color */
+  border-color: #e0e0e0; /* Matching border color for disabled state */
   cursor: not-allowed;
 }
 

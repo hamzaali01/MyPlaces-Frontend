@@ -6,10 +6,15 @@
   position: fixed;
   top: 0;
   left: 0;
-  background: #ff0055;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.26);
-  padding: 0 1rem;
+  background: #ffffff; /* White background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  padding: 0 2rem;
   z-index: 5;
+  transition: background 0.3s ease;
+}
+
+.main-header:hover {
+  background: #f0f0f0; /* Very light gray hover background */
 }
 
 main {
@@ -21,3 +26,4 @@ main {
     justify-content: space-between;
   }
 }
+

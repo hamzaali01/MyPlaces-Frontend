@@ -12,7 +12,7 @@
 .modal__header {
   width: 100%;
   padding: 1rem 0.5rem;
-  background: #2a006e;
+  background: #7f0303;
   color: white;
 }
 
@@ -25,7 +25,10 @@
 }
 
 .modal__footer {
-  padding: 1rem 0.5rem;
+  padding: 1rem;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: flex-end; /* Align the button to the right */
 }
 
 @media (min-width: 768px) {

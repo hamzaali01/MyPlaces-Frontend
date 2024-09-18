@@ -1,29 +1,37 @@
 .main-navigation__menu-btn {
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
   background: transparent;
   border: none;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  margin-right: 2rem;
+  justify-content: space-between;
   cursor: pointer;
+  padding: 0.5rem;
+  margin-right: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.main-navigation__menu-btn:hover {
+  transform: scale(1.05); /* Subtle hover effect */
 }
 
 .main-navigation__menu-btn span {
   display: block;
-  width: 3rem;
-  height: 2.5px;
-  background: white;
-}
-
-.main-navigation__title {
-  color: white;
+  width: 2.5rem;
+  height: 3px;
+  background: #333; /* Dark gray for the burger lines */
+  border-radius: 2px;
 }
 
 .main-navigation__title a {
   text-decoration: none;
-  color: white;
+  color: #000; /* Black text */
+  font-weight: bold;
+}
+
+.main-navigation__title a:hover {
+  color: #555; /* Darker gray on hover */
 }
 
 .main-navigation__header-nav {
@@ -40,6 +48,7 @@
   }
 
   .main-navigation__header-nav {
-    display: block;
+    display: flex;
+    align-items: center;
   }
 }
